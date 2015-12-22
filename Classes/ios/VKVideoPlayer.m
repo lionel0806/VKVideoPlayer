@@ -75,6 +75,8 @@ typedef enum {
 
   [self.externalMonitor deactivate];
   
+  [self pauseContent];
+  
   self.timeObserver = nil;
   self.avPlayer = nil;
   self.captionTop = nil;
@@ -83,8 +85,6 @@ typedef enum {
   self.captionBottomTimer = nil;
   
   self.playerItem = nil;
-
-  [self pauseContent];
 }
 
 #pragma mark - initialize
